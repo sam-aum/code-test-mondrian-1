@@ -1,0 +1,368 @@
+body {
+	padding: 1rem;
+	align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+}
+
+.constrain-width {
+	max-width: 600px;
+	margin: 0 auto;
+	box-shadow: 5px 5px 20px;
+    margin-bottom: 50px;
+}
+
+.square{
+    position: relative;
+	width: 100%;
+	padding-bottom: 100%;
+}
+
+/* Piet Replica*/
+.grid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 14% 11% 28% 19% 21% 7%;
+	grid-template-rows: 1.2% 12% 15% 20% 15% 15% 17% 4.8%;
+}
+.grid > div {
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box1{
+    grid-column: 1/1;
+    grid-row: 1/2;
+    background-color: rgba(188,189,188,255);
+}
+.box2{
+    grid-column: 2/5;
+    grid-row: 1/1;
+    background-color: rgba(135,133,140,255);
+}
+.box3{
+    grid-column: 5/7;
+    grid-row: 1/3;
+    background-color: rgb(182, 198, 196);
+}
+.box4{
+    grid-column: 1/2;
+    grid-row: 2/5;
+    background-color: rgba(202,202,199,255);
+}
+.box5{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: rgba(20,11,13,255);
+}
+.box6{
+    grid-column: 3/5;
+    grid-row: 2/3;
+    background-color: rgba(13,35,51,255)
+}
+.box7{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    background-color: rgb(174, 173, 173);
+}
+.box8{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    background-color: rgba(203,61,21,255);
+}
+.box9{
+    grid-column: 5/6;
+    grid-row: 3/4;
+    background-color: rgba(20,11,13,255);
+}
+.box10{
+    grid-column: 6/7;
+    grid-row: 3/4;
+    background-color: rgba(19,40,58,255);
+}
+.box11{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background-color: rgba(20,11,13,255);
+}
+.box12{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    background-color: rgba(219,179,19,255);
+}
+.box13{
+    grid-column: 4/5;
+    grid-row: 4/6;
+    background-color: rgba(31,48,65,255);
+}
+.box14{
+    grid-column: 5/6;
+    grid-row: 4/6;
+    background-color: rgba(212,72,26,255);
+}
+.box15{
+    grid-column: 6/7;
+    grid-row: 4/7;
+    background-color: rgba(137,138,143,255);
+}
+.box16{
+    grid-column: 1/2;
+    grid-row: 5/8;
+    background-color: rgba(163,163,162,255);
+}
+.box17{
+    grid-column: 2/3;
+    grid-row: 5/8;
+    background-color: rgba(166,166,166,255);
+}
+.box18{
+    grid-column: 3/4;
+    grid-row: 5/6;
+    background-color: rgba(219,179,19,255);
+}
+.box19{
+    grid-column: 3/4;
+    grid-row: 6/7;
+    background-color: rgba(216,76,25,255);
+}
+.box20{
+    grid-column: 4/5;
+    grid-row: 6/7;
+    background-color: rgba(207,206,212,255);
+}
+.box21{
+    grid-column: 5/6;
+    grid-row: 6/7;
+    background-color: rgba(219,179,19,255);
+}
+.box22{
+    grid-column: 3/4;
+    grid-row: 7/8;
+    background-color: rgba(20,11,13,255);
+}
+.box23{
+    grid-column: 4/5;
+    grid-row: 7/8;
+    background-color: rgba(155,154,162,255);
+}
+.box24{
+    grid-column: 5/6;
+    grid-row: 7/8;
+    background-color: rgba(30,43,61,255);
+}
+.box25{
+    grid-column: 6/7;
+    grid-row: 7/9;
+    background-color: rgba(164,44,18,255);
+}
+.box26{
+    grid-column: 1/3;
+    grid-row: 8/9;
+    background-color: rgba(204,161,21,255);
+}
+.box27{
+    grid-column: 3/5;
+    grid-row: 8/9;
+    background-color: rgba(190,190,189,255);
+}
+.box28{
+    grid-column: 5/6;
+    grid-row: 8/9;
+    background-color: rgba(20,11,13,255);
+}
+
+
+
+/* Rectangle Layout */
+.constrain-width2 {
+	max-width: 600px;
+	margin: 0 auto;
+	box-shadow: 5px 5px 20px;
+    margin-bottom: 50px;
+}
+
+.square2{
+    position: relative;
+	width: 100%;
+    height:1500px;
+	padding-bottom: 100%;
+}
+.column-layout{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+
+    /* grid-template-columns: 14% 11% 28% 19% 21% 7%;
+	grid-template-rows: 1.2% 12% 15% 20% 15% 15% 17% 4.8%; */
+
+    /* grid-template-columns: repeat(20, 1fr) ;
+    grid-template-rows: 7% 1.2% 14% 11% 17% 15% 1.2% 4.8% 14% 15% 13.2% 12% 15%; */
+    grid-template-columns: repeat(100, 1fr) ;
+    grid-template-rows: repeat(250, 1fr);
+}
+.column-layout > div {
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle15{
+    grid-column: 1/52;
+    grid-row: 1/6;
+    background-color: rgba(137,138,143,255);
+}
+.rectangle2{
+    grid-column: 1/58;
+    grid-row: 6/7;
+    background-color: rgba(135,133,140,255);
+}
+.rectangle16{
+    grid-column: 1/48;
+    grid-row: 7/17;
+    background-color: rgba(163,163,162,255);
+}
+.rectangle17{
+    grid-column: 1/48;
+    grid-row: 17/25;
+    background-color: rgba(166,166,166,255);
+}
+.rectangle23{
+    grid-column: 1/20;
+    grid-row: 25/37;
+    background-color: rgba(155,154,162,255);
+}
+.rectangle7{
+    grid-column: 1/42;
+    grid-row: 37/49;
+    background-color: rgb(174, 173, 173);
+}
+.rectangle1{
+    grid-column: 1/15;
+    grid-row: 49/50;
+    background-color: rgba(188,189,188,255);
+}
+.rectangle27{
+    grid-column: 1/45;
+    grid-row: 50/54;
+    background-color: rgba(190,190,189,255);
+}
+.rectangle4{
+    grid-column: 1/48;
+    grid-row: 54/64;
+    background-color: rgba(202,202,199,255);
+}
+.rectangle20{
+    grid-column: 1/20;
+    grid-row: 64/75;
+    background-color: rgba(207,206,212,255);
+}
+.rectangle3{
+    grid-column: 1/30;
+    grid-row: 75/85;
+    background-color: rgb(182, 198, 196);
+}
+.rectangle5{
+    grid-column: 1/12;
+    grid-row: 85/94;
+    background-color: rgba(20,11,13,255);
+    color: white;
+}
+.rectangle9{
+    grid-column: 1/23;
+    grid-row: 94/106;
+    background-color: rgba(20,11,13,255);
+    color: white;
+}
+.rectangle11{
+    grid-column: 1/22;
+    grid-row: 106/114;
+    background-color: rgba(20,11,13,255);
+    color: white;
+}
+.rectangle22{
+    grid-column: 1/30;
+    grid-row: 114/127;
+    background-color: rgba(20,11,13,255);
+    color: white;
+}
+.rectangle28{
+    grid-column: 1/23;
+    grid-row: 127/130;
+    background-color: rgba(20,11,13,255);
+    color: white;
+}
+.rectangle6{
+    grid-column: 1/45;
+    grid-row: 130/139;
+    background-color: rgba(13,35,51,255);
+    color: white;
+}
+.rectangle13{
+    grid-column: 1/37;
+    grid-row: 139/151;
+    background-color: rgba(31,48,65,255);
+    color: white;
+}
+.rectangle24{
+    grid-column: 1/23;
+    grid-row: 151/163;
+    background-color: rgba(31,48,65,255);
+    color: white;
+}
+.rectangle10{
+    grid-column: 1/20;
+    grid-row: 163/168;
+    background-color: rgba(31,48,65,255);
+    color: white;
+}
+.rectangle25{
+    grid-column: 1/23;
+    grid-row: 168/173;
+    background-color: rgba(164,44,18,255);
+}
+.rectangle14{
+    grid-column: 1/36;
+    grid-row: 173/187;
+    background-color: rgba(212,72,26,255);
+}
+.rectangle8{
+    grid-column: 1/20;
+    grid-row: 187/199;
+    background-color: rgba(203,61,21,255);
+}
+.rectangle19{
+    grid-column: 1/30;
+    grid-row: 199/210;
+    background-color: rgba(216,76,25,255);
+}
+.rectangle26{
+    grid-column: 1/25;
+    grid-row: 210/214;
+    background-color: rgba(204,161,21,255);
+}
+.rectangle21{
+    grid-column: 1/23;
+    grid-row: 214/225;
+    background-color: rgba(219,179,19,255);
+}
+.rectangle18{
+    grid-column: 1/30;
+    grid-row: 225/236;
+    background-color: rgba(219,179,19,255);
+}
+.rectangle12{
+    grid-column: 1/30;
+    grid-row: 236/250;
+    background-color: rgba(219,179,19,255);
+}
